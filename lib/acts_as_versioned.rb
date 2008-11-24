@@ -442,7 +442,7 @@ module ActiveRecord #:nodoc:
 
             unless self.connect.repond_to?(:create_index) 
               alias_method  "add_index", "create_index"  
-           end
+            end
             self.connection.create_index versioned_table_name, versioned_foreign_key
           end
 
